@@ -10,4 +10,6 @@ git status
 
 git add --all
 
-git commit --all -message "Your Message"
+git commit --all
+
+git push --all
