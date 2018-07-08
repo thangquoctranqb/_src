@@ -1,0 +1,69 @@
+npm option
+	-g or --global
+	-S, --save: dependencies.
+	-D, --save-dev: devDependencies.
+	-O, --save-optional: optionalDependencies.
+	--no-save: package.json file.
+
+shorthands 
+	-v: --version
+	-h, -?, --help, -H: --usage
+	-s, --silent: --loglevel silent
+	-q, --quiet: --loglevel warn
+	-d: --loglevel info
+	-dd, --verbose: --loglevel verbose
+	-ddd: --loglevel silly
+	-g: --global
+	-C: --prefix
+	-l: --long
+	-m: --message
+	-p, --porcelain: --parseable
+	-reg: --registry
+	-f: --force
+	-desc: --description
+	-S: --save
+	-P: --save-prod
+	-D: --save-dev
+	-O: --save-optional
+	-B: --save-bundle
+	-E: --save-exact
+	-y: --yes
+	-n: --yes false
+	ll and la commands: ls --long
+
+npm list -g --depth=0
+npm list -c --depth=0 / npm list -s --depth=0 / npm list -d --depth=0
+
+npm install <Moduel_Name> [option]
+npm uninstall <Moduel_Name> [option]
+
+-------------------------------------------------------------------------------------
+npm install =>
+{
+  "name": "newbie",
+  "version": "1.0.0",
+  "bin": "./node_modules/.bin/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thangdtu/careerguidance"
+  },
+  "description": "This first project nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thangquoctran.qb@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.87.0" //"request": "latest"
+  },
+  "devDependencies": {}
+}
+-------------------------------------------------------------------------------------
+ependencies are installed on both:
+	npm install from a directory that contains package.json
+	npm install $package on any other directory
+devDependencies are:
+	also installed on npm install on a directory that contains package.json, unless you pass the --production flag (go upvote Gayan Charith's answer).
+	not installed on npm install "$package" on any other directory, unless you give it the --dev option.
+	are not installed transitively.

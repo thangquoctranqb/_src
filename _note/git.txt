@@ -1,0 +1,13 @@
+git clone --progress -v https://github.com/thangquoctranqb/_src.git
+
+cd _src
+
+eval $(ssh-agent -s)
+
+ssh-add E:/_gitKey/tqt
+
+git status
+
+git add --all
+
+git commit --all -message "Your Message"

@@ -1,0 +1,13 @@
+sudo lsof -i tcp:80
+sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
+
+sudo python tonardoOpsGw/main.py &
+sudo python tonardoOpsGw/main.py >/tmp/pythonLog-normal.txt 2>/tmp/pythonLog-error.txt &
+sudo python tonardoOpsGw/main.py >/tmp/pythonLog.txt 2>&1 &
+
+find . -type f  -name '*.conf' -printf '%TY-%Tm-%Td %TT %p\n' | sort
+./run_gateone.py --settings_dir=/home/ec2-user/chapter1
+expand -t 4 OpsGw/main.py > OpsGw/main2.py
+
+sudo chmod 700 /usr/lib/zabbix/alertscripts/test_output.txt
+sudo chown zabbix /usr/lib/zabbix/alertscripts/test_output.txt

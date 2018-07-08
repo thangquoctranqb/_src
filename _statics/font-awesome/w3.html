@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="font-awesome-css/font-awesome.min.all.css">
+	<body>
+		<div class="main-container">
+			<div class="nav-menu card white">
+				<div class="text-center">
+					<h4>OPSGW Main Menu</h4>
+				</div>
+				<hr>
+				<div class="padding-text">
+					<a href="#"><div class="fa fa-chevron-down rotate"> Features</div></a>
+					<li>
+						<input type="checkbox" id="list-item-1">
+						<label for="list-item-1" class="first">Serif</label>
+						<ul>
+						  <li>Slabo</li>
+						  <li>Droid Serif</li>
+						  <li>Roboto Serif</li>
+						  <li>Lora</li>
+						  <li>Meriweather</li>
+						</ul>
+					  </li>
+				</div>
+				<hr>
+				<div>
+					<p>Server List</p>
+					<span>Search<input type="text" placeholder="Enter name or ip"></span>
+					<li><a href="#">server1</a></li>
+					<li><a href="#">server1</a></li>
+				</div>
+				<hr>
+				<footer class="container margin-top">
+					<div>© Copyright 2018 | by ChatOpsAI Team</div>
+				</footer>
+			</div>
+			<div class="main-content">
+				<div class="container card white">
+					<h2>Content</h2>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>
+			$(".rotate").click(function () {
+				$(this).toggleClass("down");
+			})
+		</script>
+	</body>
+</html>
