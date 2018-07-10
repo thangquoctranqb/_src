@@ -1421,3 +1421,40 @@ Description: This is the storage plugin for the traditional shelf store for errb
 2018-07-10 23:20:02,333 DEBUG    Rocket.Monitor            Flushing stale connection: 127.0.0.1:3141
 2018-07-10 23:20:02,333 DEBUG    Rocket.Monitor            Flushing stale connection: 127.0.0.1:3141
 2018-07-10 23:20:03,335 DEBUG    Rocket.Monitor            Flushing stale connection: 127.0.0.1:3141
+2018-07-11 06:40:43,028 DEBUG    Rocket.Errors.Thread-29   Received a connection.
+2018-07-11 06:40:43,029 DEBUG    Rocket.Errors.Thread-27   Received a connection.
+2018-07-11 06:40:43,029 DEBUG    Rocket.Errors.Thread-28   Received a connection.
+2018-07-11 06:40:43,029 DEBUG    Rocket.Errors.Thread-29   Serving a request
+2018-07-11 06:40:43,029 DEBUG    Rocket.Errors.Thread-27   Serving a request
+2018-07-11 06:40:43,030 DEBUG    Rocket.Errors.Thread-28   Serving a request
+2018-07-11 06:40:43,030 DEBUG    Rocket.Errors.Thread-29   Getting sock_file
+2018-07-11 06:40:43,030 DEBUG    Rocket.Errors.Thread-27   Getting sock_file
+2018-07-11 06:40:43,031 DEBUG    Rocket.Errors.Thread-28   Getting sock_file
+2018-07-11 06:40:43,064 DEBUG    Rocket.Errors.Thread-28   Sending Headers: 'HTTP/1.1 500 Internal Server Error\r\nContent-Length: 749\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Tue, 10 Jul 2018 23:40:43 GMT\r\nServer: Rocket 1.2.5 Python/3.6.5\r\nConnection: keep-alive\r\n\r\n'
+2018-07-11 06:40:43,066 DEBUG    Rocket.Errors.Thread-28   Finally closing output and sock_file
+2018-07-11 06:40:43,066 INFO     Rocket.Requests           127.0.0.1 - "GET /callback HTTP/1.1" - 500 749
+2018-07-11 06:40:43,067 DEBUG    Rocket.Errors.Thread-28   Serving a request
+2018-07-11 06:40:43,067 DEBUG    Rocket.Errors.Thread-28   Getting sock_file
+2018-07-11 06:40:43,279 DEBUG    Rocket.Errors.Thread-30   Received a connection.
+2018-07-11 06:40:43,280 DEBUG    Rocket.Errors.Thread-30   Serving a request
+2018-07-11 06:40:43,280 DEBUG    Rocket.Errors.Thread-30   Getting sock_file
+2018-07-11 06:40:44,032 DEBUG    Rocket.Errors.Thread-27   Finally closing output and sock_file
+2018-07-11 06:40:44,032 DEBUG    Rocket.Errors.Thread-29   Finally closing output and sock_file
+2018-07-11 06:40:44,032 DEBUG    Rocket.Errors.Thread-27   Socket timed out
+2018-07-11 06:40:44,033 DEBUG    Rocket.Errors.Thread-29   Socket timed out
+2018-07-11 06:40:44,068 DEBUG    Rocket.Errors.Thread-28   Finally closing output and sock_file
+2018-07-11 06:40:44,068 DEBUG    Rocket.Errors.Thread-28   Socket timed out
+2018-07-11 06:40:44,281 DEBUG    Rocket.Errors.Thread-30   Finally closing output and sock_file
+2018-07-11 06:40:44,281 DEBUG    Rocket.Errors.Thread-30   Socket timed out
+2018-07-11 06:40:44,597 DEBUG    Rocket.Monitor            In "receive timed-out connections" loop.
+2018-07-11 06:40:44,597 DEBUG    Rocket.Monitor            Received a timed out connection.
+2018-07-11 06:40:44,597 DEBUG    Rocket.Monitor            Adding connection to monitor list.
+2018-07-11 06:40:44,597 DEBUG    Rocket.Monitor            In "receive timed-out connections" loop.
+2018-07-11 06:40:44,597 DEBUG    Rocket.Monitor            Received a timed out connection.
+2018-07-11 06:40:44,598 DEBUG    Rocket.Monitor            Adding connection to monitor list.
+2018-07-11 06:40:44,598 DEBUG    Rocket.Monitor            In "receive timed-out connections" loop.
+2018-07-11 06:40:44,598 DEBUG    Rocket.Monitor            Received a timed out connection.
+2018-07-11 06:40:44,598 DEBUG    Rocket.Monitor            Adding connection to monitor list.
+2018-07-11 06:40:44,598 DEBUG    Rocket.Monitor            In "receive timed-out connections" loop.
+2018-07-11 06:40:44,598 DEBUG    Rocket.Monitor            Received a timed out connection.
+2018-07-11 06:40:44,599 DEBUG    Rocket.Monitor            Adding connection to monitor list.
