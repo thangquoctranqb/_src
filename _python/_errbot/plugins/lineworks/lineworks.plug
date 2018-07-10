@@ -1,0 +1,10 @@
+[Core]
+name = lineworks
+module = lineworks
+
+[Documentation]
+description = connect to message bot's lineworks
+
+[Python]
+version = 3
+
